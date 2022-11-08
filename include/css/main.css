@@ -776,6 +776,11 @@ nav#menu #menu-nav li a:hover {
    About Section
 ================================================== */
 
+#special_case{
+	
+	width: 110%;
+}
+
 .profile-name {
 	margin-bottom: 15px;	
 }
@@ -788,11 +793,11 @@ nav#menu #menu-nav li a:hover {
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 25px;
-	cursor: pointer;
 }
 
 .image-wrap img {
-	width: 100%;	
+	 width: 100%;
+	 
 }
 
 .image-wrap  .hover-wrap {
