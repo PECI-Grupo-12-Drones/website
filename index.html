@@ -37,8 +37,6 @@
 <!-- Font Icons -->
 <link href="include/css/fonts.css" rel="stylesheet">
 
-<!-- Shortcodes -->
-<link href="include/css/shortcodes.css" rel="stylesheet">
 
 <!-- Responsive -->
 <link href="include/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -53,11 +51,12 @@
 
 <!-- Fav Icon -->
 <link rel="shortcut icon" href="#">
-
 <link rel="apple-touch-icon" href="#">
 <link rel="apple-touch-icon" sizes="114x114" href="#">
 <link rel="apple-touch-icon" sizes="72x72" href="#">
 <link rel="apple-touch-icon" sizes="144x144" href="#">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <!-- Modernizr -->
 <script src="include/js/modernizr.js"></script>
@@ -81,13 +80,11 @@
 </head>
 
 
-<body>
-
 <!-- This section is for Splash Screen -->
 <div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
+    <section id="jSplash">
+        <div id="circle"></div>
+    </section>
 </div>
 <!-- End of Splash Screen -->
 
@@ -96,7 +93,7 @@
     <div class="overlay"></div>
 
     <div class="slider-text">
-    	<div id="slidecaption"></div>
+    	
     </div>   
 	
 	<div class="control-nav">
@@ -112,12 +109,7 @@
 <!-- Header -->
 <header>
     <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-        <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
-        </div>
-        
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>        
         <nav id="menu">
         	<ul id="menu-nav">
             	<li class="current"><a href="#home-slider">Home</a></li>
@@ -150,8 +142,10 @@
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
                     	<li class="type-work">Contents</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">Everything</a></li>
                         <li><a href="#filter" data-option-value=".delivered" >Delivered</a></li>
                         <li><a href="#filter" data-option-value=".calendar">Calendar</a></li>
+                        <li><a href="#filter" data-option-value=".download">Downloads</a></li>
                     </ul>
 
                 </nav>
@@ -166,17 +160,12 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 delivered">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Milestone 1" href="include/img/work/full/Milestone1_goals.png" target="_blank">Download>
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Milestone 1" href="include/img/work/full/Milestone1_goals.png">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="include/img/work/thumbs/Milestone1.png" alt="Lifecycle Objectives & Work Plan">
-                                
-                                
-
-                               <!-- <a href="/images/myw3schoolsimage.jpg" download="w3logo">
-                                <a href="/images/myw3schoolsimage.jpg" download> -->  
                             </li>
                         	<!-- End Item Project -->
                             
@@ -190,6 +179,14 @@
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img src="include/img/work/thumbs/CalendarThumb2.png" alt="Present in milestone 1 ">
+                            </li>
+                        	<!-- End Item Project -->
+
+                            <!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 download">
+                                <a href="include/docs/M1.pptx"  download="include/docs/M1.pptx"><p>Download Milestone 1</p></a>
+                                <a href="include/docs/M1.pptx"  download="include/docs/M1.pptx"><p>Download Calendar</p></a>
+                                <a href="include/docs/Enunciado.pdf"  download="include/docs/M1.pptx"><p>Download Enunciado</p></a>
                             </li>
                         	<!-- End Item Project -->
                         </ul>
@@ -282,24 +279,17 @@
         <!-- End Profile -->
     </div>
     
-    <div class="container">
-        <!-- Title Page -->
         <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <p></p>
-                    <h3 class="title-description">Our Tech Support</h3>
-                </div>
+            <div class="title-page">
+                <h2 class="title">Professors</h2>
             </div>
-        </div>
-    
-        <div class="row">
+            
             <!-- Profile Sargento -->
             <div class="span4 profile">
                 <div class="image-wrap">
                     <img src="include/img/profile/Sargento_phto2.png" id="special_case" alt="Susana Sargento">
                 </div>
-                <h3 class="">Susana Sargento</h3>
+                <h3 class="profile-name">Susana Sargento</h3>
                 <p class="profile-description">Orientadora</p>
             </div>
             <!-- End Profile -->
@@ -309,16 +299,11 @@
                 <div class="image-wrap">
                     <img src="include/img/profile/Pedro-Rito_photo.jpg" alt="Pedro Rito">
                 </div>
-                <h3 class="">Pedro Rito</h3>
+                <h3 class="profile-name">Pedro Rito</h3>
                 <p class="profile-description">Orientador</p>
             </div>
-            <!-- End Profile -->
-    
-            
+            <!-- End Profile -->    
         </div>
-        
-        <!-- End People -->
-    </div>
     <!-- End People -->
 </div>
 </div>
@@ -330,26 +315,19 @@
             <div class="span12">
                 <nav id="social">
                     <ul>
-                        <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="https://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
-                        <li><a href="https://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
-                        <li><a href="https://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
-                        <li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        <li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
-                        <li><a href="https://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
-                        <li><a href="https://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
-                        <li><a href="https://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>
+                        <h3>Check out the code for this website on our github</h3>
+                        <li><a href="https://github.com/PECI-Grupo-12-Drones" target="_blank"><span i class="fa fa-github" style="color: red; font-size:50px;"></i></span></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </div>
-</div>
+</div> 
 <!-- End Socialize -->
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy; PECI 2022/2023</p>
+	<p class="credits">&copy; PECI 2022/2023 - Grupo 12</p>
 </footer>
 <!-- End Footer -->
 
@@ -369,7 +347,6 @@
 <script src="include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
 <script src="include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
 <script src="include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="include/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="include/js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->
