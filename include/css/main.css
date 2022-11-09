@@ -986,8 +986,6 @@ nav#menu #menu-nav li a:hover {
 	display: block;
 	width: 100px;
 	height: 70px;
-
-	background: #000000;
 	
 	-webkit-transition: all 400ms ease-out 0s;	
 	   -moz-transition: all 400ms ease-out 0s;
@@ -1023,16 +1021,9 @@ nav#menu #menu-nav li a:hover {
 			transform: rotateY(180deg);
 }
 
-#social ul li:hover a,
-#social ul li.active a {
-	background-color: black;	
-	
-	-webkit-transform: rotateY(0deg);
-	   -moz-transform: rotateY(0deg);
-		-ms-transform: rotateY(0deg);
-		 -o-transform: rotateY(0deg);
-		    transform: rotateY(0deg);
-}
+/*#social ul li:hover a,
+#social ul li.active a {	
+}*/
 
 #social ul li:hover a span,
 #social ul li.active a span {
