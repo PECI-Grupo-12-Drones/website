@@ -5,4 +5,4 @@
 
 Hosted with GitHub Pages
 
-Based on Brushed by [Alessio Atzeni](www.alessioatzeni.com)
+Based on Brushed by [Alessio Atzeni](https://www.alessioatzeni.com/)
