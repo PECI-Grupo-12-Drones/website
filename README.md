@@ -1,7 +1,7 @@
 # website
 ## Website for PECI, Project 12 - Drones
 
-[Click here to vist the website]https://peci-grupo-12-drones.github.io/website/  
+[Click here to vist the website](https://peci-grupo-12-drones.github.io/website/)  
 
 Hosted with GitHub Pages
 
